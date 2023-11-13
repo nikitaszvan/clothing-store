@@ -1,4 +1,15 @@
 .navbar {
     background-color: rgb(241, 237, 228);
     height: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-links {
+    display: inline;
+    margin: 0 20px 0 20px;
+}   
+
+.nav-div {
+    height: 60px;
+    margin-top: 50px
 }
