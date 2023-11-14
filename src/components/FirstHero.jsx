@@ -4,7 +4,7 @@ function FirstHero() {
     return (
         <div className="first-hero">
             <h1 className="first-hero-h1">TITLE</h1>
-            <img src="/images/first-hero-figures.png" alt="models wearing clothes"/>
+            <img className="first-hero-models" src="/images/first-hero-figures.png" alt="models wearing clothes"/>
         </div>
     )
 }

@@ -21,4 +21,11 @@
 
 .first-hero-h1 {
     margin: 0;
+    float: left;
+}
+
+.first-hero-models {
+    height: 600px;
+    float: right;
+    
 }
