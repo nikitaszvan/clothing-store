@@ -9,7 +9,7 @@ function HomeNavbar() {
             <h1 href="/" class="nav-links">PRODUCTS</h1>
             <h1 href="/" class="nav-links">BRANDS</h1>
             <h1 href="/" class="nav-links">SALE</h1>
-            <h1 href="/" class="nav-links">SALI</h1>
+            <h1 href="/" class="nav-links">SALE</h1>
             </div>
         </nav>
     )
