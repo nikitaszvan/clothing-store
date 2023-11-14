@@ -1,6 +1,7 @@
 .navbar {
     background-color: rgb(241, 237, 228);
     height: 80px;
+    width: 1440px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -9,3 +10,15 @@
     margin: 0 20px 0 20px;
 }   
 
+.first-hero {
+    height: 600px;
+    background-image: url("./images/background.png");
+    background-size: cover;
+    width: 1440px;
+    padding: 0;
+    margin: 0;
+}
+
+.first-hero-h1 {
+    margin: 0;
+}
