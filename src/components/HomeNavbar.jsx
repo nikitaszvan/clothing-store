@@ -3,16 +3,14 @@ import TrackChangesIcon from '@mui/icons-material/TrackChanges';
 
 function HomeNavbar() {
     return (
-        <nav className="navbar">
-            <div className="nav-div">
-            <h1 href="/" className="nav-links"><TrackChangesIcon fontSize="large" /></h1>
-            <h1 href="/" className="nav-links">PRODUCTS</h1>
-            <h1 href="/" className="nav-links">BRANDS</h1>
-            <h1 href="/" className="nav-links">SALE</h1>
-            <h1 href="/" className="nav-links">ACCESSORIES</h1>
-            <h1 href="/" className="nav-links">LOOKS</h1>
-            </div>
-        </nav>
+        <div className="navbar">
+            <button href="/" className="nav-links"><TrackChangesIcon fontSize="large" /></button>
+            <button href="/" className="nav-links">PRODUCTS</button>
+            <button href="/" className="nav-links">BRANDS</button>
+            <button href="/" className="nav-links">SALE</button>
+            <button href="/" className="nav-links">ACCESSORIES</button>
+            <button href="/" className="nav-links">LOOKS</button>
+        </div>
     )
 }
 
