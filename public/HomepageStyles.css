@@ -47,7 +47,7 @@
     margin-left: 65px;
     margin-top: 70px;
     filter: drop-shadow(5px 2px 1px #BEBEBE);
-
+    font-family: 'Domelen';
 }
 
 .first-hero-div1 {
@@ -83,9 +83,29 @@
     margin: 0;
 }
 
-.second-hero-pic {
+/* .second-hero-pic {
     height: 600px;
     width: 400px;
     margin-left: 20px;
     margin-right: 20px;
+} */
+
+@font-face {
+    font-family: 'Domelen';
+    src: url('../src/fonts/domelen.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Domelen-Italic';
+    src: url('../src/fonts/domelen-italic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Domelen-Bold';
+    src: url('../src/fonts/domelen-bold.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Domelen-Bold-Italic';
+    src: url('../src/fonts/domelen-bold-italic.otf') format('otf');
 }
