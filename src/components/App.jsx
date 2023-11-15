@@ -3,6 +3,7 @@ import HomeNavbar from "./HomeNavbar.jsx";
 import FirstHero from "./FirstHero.jsx";
 import SecondHero from "./SecondHero.jsx";
 import Divider from "./Divider.jsx";
+import ThirdHero from "./ThirdHero.jsx";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
         <FirstHero />
         <SecondHero />
         <Divider />
+        <ThirdHero />
         </div>
     )
 }

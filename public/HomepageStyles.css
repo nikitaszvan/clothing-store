@@ -97,7 +97,7 @@
     position: relative;
     width: 1440px;
     height: 50px;
-    background-color: #f5f1e967;
+    background-color: #f5f1e93a;
     margin-top: -40px;
 }
 
@@ -133,12 +133,13 @@
 }
 
 .divider {
-    background-color: #f5f1e967;
-    height: 100px;
+    background-color: #f5f1e93a;
+    height: 20px;
     width: 1440px;
     display: flex;
-    align-items: center;
+    padding-top: 20px;
     justify-content: space-between;
+    padding-bottom: 0;
   }
   
   .left-line {
@@ -161,4 +162,33 @@
     width: 20px;
     background-color: #424242e4;
     border-radius: 50%;
+  }
+
+  .third-hero {
+    background-color: #f5f1e93a;
+    width: 1300px;
+    height: 700px;
+    padding-top: 20px;
+  }
+
+  .text-box-p-1, .text-box-p-2  {
+    display: inline;
+  }
+
+  .third-hero {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  
+  .text-box-header {
+    font-family: 'Kanit', sans-serif;
+    color: #292b2b;
+    font-size: 30px;
+  }
+
+  .text-box-p-2 {
+    font-weight: bold;
+    margin-left: 10px;
   }
