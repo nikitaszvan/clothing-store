@@ -1,3 +1,8 @@
+.main-div, #root, body {
+    z-index: -2;
+    position: relative;
+}
+
 .navbar {
     background-color: rgb(241, 237, 228);
     height: 80px;
@@ -16,10 +21,6 @@
     padding: 8px 20px 6px 20px;
 }
 
-/* .nav-div {
-    padding-top: 25px;
-} */
-
 .first-hero {
     height: 570px;
     background-image: url("./images/background.png");
@@ -30,34 +31,36 @@
 }
 
 .first-hero-h1 {
-    font-size: 60px;
-    margin-left: 65px;
-    margin-top: 60px;
-    filter: drop-shadow(5px 2px 1px #BEBEBE);
+    font-size: 80px;
+    padding-left: 20px;
+    margin-top: 40px;
+    color: #292b2b;
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
     margin-bottom: 25px;
 }
 
 .first-hero-p1 {
-    padding-left: 65px;
+    padding-left: 10px;
     padding-top: 50px;
     font-family: 'Teko', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     margin: 0px;
 }
 
 .first-hero-models {
     height: 570px;
     float: right;
+    padding-right: 50px;
 }
 
 .first-hero-div1 {
     float: left;
+    margin-left: 100px;
 }
 
 .first-hero-p2 {
-    padding-left: 65px;
+    padding-left: 20px;
     padding-top: 10px;
     font-family: 'Teko', sans-serif;
     font-size: 30px;
@@ -66,10 +69,11 @@
 }
 
 .catalouge-btn {
+    margin-left: 20px;
     font-family: 'Teko', sans-serif;
     font-size: 30px;
     padding: 20px 30px 20px 30px;
-    margin-left: 65px;
+    /* margin-left: 65px; */
     margin-top: 50px;
     background-color: #C5B7A3;
     border: none;
@@ -78,24 +82,83 @@
 }
 
 .second-hero {
-    height: 855px;
+    height: 534px;
     background-color: #FFFEFE;
     background-size: cover;
     width: 1440px;
     padding: 0;
     margin: 0;
-    display: inline;
+    z-index: -1;
+    position: relative;
+}
+
+.second-color {
+    z-index: 0;
+    position: relative;
+    width: 1440px;
+    height: 50px;
+    background-color: #f5f1e967;
+    margin-top: -40px;
 }
 
 .second-hero-shoe {
-    height: 194px;
-    width: 322px;
-    margin-left: 111px;
-    margin-top: 142px;
+    height: 217px;
+    width: 360px;
+    margin-left: 120px;
+    margin-top: 150px;
+    float: left;
+    z-index: 1;
+    position: relative;
+    display: inline;
 }
 
 .second-hero-hoodie-1 {
     height: 501px;
     width: 223px;
-    margin-left: 208px;
+    margin-left: 170px;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+    display: inline;
 }
+
+.second-hero-hoodie-2 {
+    height: 501px;
+    width: 223px;
+    margin-left: 180px;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+    display: inline;
+}
+
+.divider {
+    background-color: #f5f1e967;
+    height: 100px;
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .left-line {
+    height: 3px;
+    width: 550px;
+    background-color: #ece5d9;
+    margin-left: 110px; /* Adjust the top margin as needed */
+  }
+
+  .right-line {
+    height: 3px;
+    width: 550px;
+    background-color: #ece5d9;
+    margin-right: 110px; /* Adjust the top margin as needed */
+  }
+  
+  
+  .middle-circle {
+    height: 20px;
+    width: 20px;
+    background-color: #424242e4;
+    border-radius: 50%;
+  }

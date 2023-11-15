@@ -5,9 +5,9 @@ function FirstHero() {
         <div className="first-hero">
             <div className="first-hero-div1">
             <p className="first-hero-p1">T I T L E</p>
-            <h1 className="first-hero-h1">THE TRUTH</h1>
+            <h1 className="first-hero-h1">LE SANTO</h1>
             <p className="first-hero-p2">Get the collection the entire population <br/>is waiting for</p>
-            <button className="catalouge-btn">GET THE LOOK</button>
+            <button className="catalouge-btn">GET THE LOOK HERE</button>
             </div>
             <img className="first-hero-models" src="/images/first-hero-figures.png" alt="models wearing clothes"/>
             
