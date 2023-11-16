@@ -184,7 +184,7 @@
   padding-top: 25px;
   align-items: center;
   color: #a18c6e;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .text-box-p-1 {
@@ -195,7 +195,7 @@
   display: flex;
   justify-content: center;
   width: "100%";
-  height: 320px;
+  height: 300px;
   padding-top: 20px;
 }
 
@@ -319,6 +319,7 @@
 .third-column-4-hero {
   float: right;
   margin-top: 160px;
+  margin-right: 10px;
 }
 
 .hoodie-pic {
@@ -327,8 +328,8 @@
 
 .outfit-card-container {
   display: inline-block;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 
