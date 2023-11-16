@@ -44,7 +44,8 @@
     padding-left: 10px;
     padding-top: 50px;
     font-family: 'Kanit', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 5px;
     margin: 0px;
     color: #2b2827ac;
 }
@@ -57,16 +58,18 @@
 
 .first-hero-div1 {
     float: left;
-    margin-left: 100px;
+    margin-left: 70px;
 }
 
 .first-hero-p2 {
     padding-left: 20px;
     padding-top: 10px;
-    font-family: 'Teko', sans-serif;
-    font-size: 30px;
+    font-family: 'Prompt', sans-serif;
+    font-weight:300;
+    font-size: 25px;
     margin: 0px;
     color: #424242;
+    margin-left: 5px;
 }
 
 .catalouge-btn {
@@ -145,16 +148,16 @@
   
 .left-line {
   height: 3px;
-  width: 450px;
+  width: 420px;
   background-color: #ece5d9;
-  margin-left: 190px;
+  margin-left: 240px;
 }
 
 .right-line {
   height: 3px;
-  width: 450px;
+  width: 420px;
   background-color: #ece5d9;
-  margin-right: 190px;
+  margin-right: 240px;
 }
 
 
@@ -225,7 +228,7 @@
 
 .fourth-hero {
   width: "100%";
-  height: 600px;
+  height: 800px;
   background:#F2EEE6;
 }
 
@@ -234,7 +237,98 @@
 }
 
 .first-column-4-hero {
-  margin-left: 100px;
-  margin-top: 40px;
+  margin-left: 70px;
+  margin-top: 80px;
+  width: 280px;
+  float: left;
 }
+
+.first-c-p-1 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 20px;
+  color: #a18c6e;
+  letter-spacing: 5px;
+}
+
+.first-c-h2 {
+  font-family: 'Kanit', sans-serif;
+  color: #2b2827f0;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-top: 100px;
+}
+
+.first-c-p-3, .first-c-p-4 {
+  word-wrap: break-word;
+  font-size: 16px;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  color: #a18c6e;
+  line-height: 2;
+}
+
+.first-c-p-3 {
+  margin-top: 8px;
+  
+}
+
+.first-c-p-4 {
+  padding-top: 30px;
+}
+
+.first-c-p-2 {
+  font-size: 17px;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  color: #a18c6ebe;
+  margin-bottom: 0;
+  margin-top: 55px;
+}
+
+.second-c-h2 {
+  font-family: 'Kanit', sans-serif;
+  color: #2b2827f0;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.second-column-4-hero {
+  margin-top: 235px;
+  margin-left: 70px;
+}
+
+.second-c-p-1, .second-c-p-2, .second-c-p-3 {
+  word-wrap: break-word;
+  font-size: 16px;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  color: #a18c6e;
+  line-height: 2;
+}
+
+.second-c-p-1 {
+  margin-bottom: 0px;
+  margin-top: 35px;
+  color: #a18c6ebe;
+}
+
+.second-c-p-2 {
+  margin-top: 0px; 
+}
+
+.third-column-4-hero {
+  float: right;
+  margin-top: 160px;
+}
+
+.hoodie-pic {
+  height: 380px;
+}
+
+.outfit-card-container {
+  display: inline-block;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
 
