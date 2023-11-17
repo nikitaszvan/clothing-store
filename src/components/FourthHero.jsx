@@ -41,7 +41,7 @@ function FourthHero() {
             p_2="IXX"
             h2_1="GREYY ATOMM"
             h2_2="EDENO"
-            p_3="TECHNO GEOGRAPHE JETS"
+            p_3="TECHNO GEOGRAPHE"
             p_4="ELECTROCRYR"/>
             <OutfitCard
             class_name="hoodie-pic"
@@ -51,10 +51,9 @@ function FourthHero() {
             p_2="IXX"
             h2_1="GREYY ATOMM"
             h2_2="EDENO"
-            p_3="TECHNO GEOGRAPHE JETS"
+            p_3="TECHNO GEOGRAPHE"
             p_4="ELECTROCRYR"/>
             </div>
-
         </div>
     )
 }

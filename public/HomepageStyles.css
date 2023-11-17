@@ -240,7 +240,7 @@
 .first-column-4-hero {
   margin-left: 70px;
   margin-top: 80px;
-  width: 280px;
+  width: 340px;
   float: left;
 }
 
@@ -295,7 +295,7 @@
 
 .second-column-4-hero {
   margin-top: 235px;
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 .second-c-p-1, .second-c-p-2, .second-c-p-3 {
@@ -311,6 +311,7 @@
   margin-bottom: 0px;
   margin-top: 35px;
   color: #a18c6ebe;
+  font-size: 14px;
 }
 
 .second-c-p-2 {
@@ -320,17 +321,80 @@
 .third-column-4-hero {
   float: right;
   margin-top: 160px;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 
 .hoodie-pic {
   height: 380px;
+  margin-left: 27px;
 }
 
 .outfit-card-container {
   display: inline-block;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
+.outfit-card-p-1-2-container {
+  margin-top: 10px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.outfit-card-container > * {
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+.outfit-card-h2-1-2-container > * {
+  display: inline;
+  font-size: 20px;
+}
+
+.outfit-card-p-3-4-container > * {
+  display: inline;
+}
+
+.outfit-card-p-1-2-container > * {
+  display: inline;
+}
+
+.outfit-card-h2-1 {
+  margin-right: 50px;
+}
+
+.outfit-card-p-4 {
+  margin-left: 30px;
+  margin-right: 15px;
+}
+
+.outfit-card-p-1 {
+  margin-right: 10px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.outfit-card-p-3 {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.outfit-card-p-2, .outfit-card-p-4 {
+  color: #A18C6E;
+  font-size: 18px;
+}
+
+.outfit-card-h2-1-2-container {
+  margin-top: 35px;
+  color: #2b2827ac;
+}
+
+.outfit-card-p-3-4-container {
+  margin-top: 15px;
+}
+
+
 
 
