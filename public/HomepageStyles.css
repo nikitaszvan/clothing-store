@@ -5,8 +5,7 @@
 
 .navbar {
     background-color: rgb(241, 237, 228);
-    height: 80px;
-    width: "100%";
+    width: 100%;
     z-index: 1;
     position: relative;
 }
