@@ -12,8 +12,7 @@ function HomeNavbar() {
     return (
         <div className="navbar">
             <button href="/" className="nav-links" onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-          style={buttonStyle}
+
           ><TrackChangesIcon fontSize="large" /></button>
             <button href="/" className="nav-links" onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
