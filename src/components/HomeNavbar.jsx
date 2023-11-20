@@ -13,7 +13,7 @@ const useHover = () => {
     };
   
     const buttonStyle = {
-      backgroundColor: isHovered ? '#424242' : '#F1EDE4',
+      backgroundColor: isHovered ? '#424242' : 'transparent',
       color: isHovered ? '#F1EDE4' : '#424242',
       cursor: isHovered ? 'pointer' : null
     };

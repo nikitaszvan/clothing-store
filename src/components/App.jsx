@@ -9,7 +9,6 @@ import HomeFooter from "./HomeFooter.jsx";
 
 function App() {
     return (
-        <div className="main-div-container">
         <div className="main-div">
         <HomeNavbar />
         <FirstHero />
@@ -17,7 +16,6 @@ function App() {
         <Divider />
         <ThirdHero />
         <FourthHero />
-        </div>
         </div>
     )
 }
