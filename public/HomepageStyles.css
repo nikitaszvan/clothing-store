@@ -19,6 +19,7 @@
     position: relative;
 }
 
+
 .nav-links {
     display: inline;
     font-family: 'Bebas Neue', sans-serif;
@@ -31,6 +32,12 @@
     padding: 8px 20px 6px 20px;
 }
 
+.dropdown-content {
+  display: none;
+}
+
+
+
 .first-hero {
     height: 570px;
     background-image: url("./images/background.png");
@@ -41,7 +48,7 @@
 }
 
 .first-hero-h1 {
-    font-size: 80px;
+    font-size: 35px;
     padding-left: 20px;
     margin-top: 30px;
     color: #292b2b;
@@ -60,7 +67,7 @@
 }
 
 .first-hero-models {
-    height: 80%;
+    height: 70%;
     float: right;
 }
 
@@ -74,7 +81,7 @@
     padding-top: 10px;
     font-family: 'Prompt', sans-serif;
     font-weight:300;
-    font-size: 25px;
+    font-size: 15px;
     margin: 0px;
     color: #424242;
     margin-left: 5px;

@@ -21,8 +21,9 @@ const useHover = () => {
     return { isHovered, handleMouseEnter, handleMouseLeave, buttonStyle };
   };
 
+  
 function HomeNavbar() {
-
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
     const button1 = useHover();
     const button2 = useHover();
     const button3 = useHover();
@@ -34,18 +35,29 @@ function HomeNavbar() {
         <div className="navbar">
             <button 
               href="/" 
-              className="nav-links"
+              className="nav-links logo"
               onMouseEnter={button1.handleMouseEnter}
               onMouseLeave={button1.handleMouseLeave}
               style={button1.buttonStyle}
-            ><TrackChangesIcon fontSize="large" /></button>
+            ><TrackChangesIcon fontSize="large" />
+          
+</button>
             <button
               href="/"
               className="nav-links"
-              onMouseEnter={button2.handleMouseEnter}
-              onMouseLeave={button2.handleMouseLeave}
+              // onMouseEnter={button2.handleMouseEnter}
+              // onMouseLeave={button2.handleMouseLeave}
               style={button2.buttonStyle}
-            >PRODUCTS</button>
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}>PRODUCTS
+              {isDropdownOpen && (
+                <div className="dropdown-content">
+                  <a href="/">Item 1</a>
+                  <a href="/">Item 2</a>
+                  <a href="/">Item 3</a>
+                </div>
+              )}
+            </button>
             <button
               href="/"
               className="nav-links"
