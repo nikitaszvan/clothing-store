@@ -15,21 +15,33 @@ const useHover = () => {
     const buttonStyle = {
       backgroundColor: isHovered ? '#424242' : 'transparent',
       color: isHovered ? '#F1EDE4' : '#424242',
-      cursor: isHovered ? 'pointer' : null
+      cursor: isHovered ? 'pointer' : null,
+      display: isHovered ? 'block' : 'inline'
     };
+
+    const subButtonStyle = {
+      backgroundColor: isHovered ? '#424242' : '#F1EDE4',
+      color: isHovered ? '#F1EDE4' : '#424242',
+      cursor: isHovered ? 'pointer' : null
+
+    };
+
   
-    return { isHovered, handleMouseEnter, handleMouseLeave, buttonStyle };
+    return { isHovered, handleMouseEnter, handleMouseLeave, buttonStyle, subButtonStyle };
   };
 
   
 function HomeNavbar() {
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
+
     const button1 = useHover();
     const button2 = useHover();
     const button3 = useHover();
     const button4 = useHover();
     const button5 = useHover();
     const button6 = useHover();
+    const button2_1 = useHover();
+    const button2_2 = useHover();
+    const button2_3 = useHover();
     
     return (
         <div className="navbar">
@@ -45,16 +57,20 @@ function HomeNavbar() {
             <button
               href="/"
               className="nav-links"
-              // onMouseEnter={button2.handleMouseEnter}
-              // onMouseLeave={button2.handleMouseLeave}
-              style={button2.buttonStyle}
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}>PRODUCTS
-              {isDropdownOpen && (
+              onMouseEnter={button2.handleMouseEnter}
+              onMouseLeave={button2.handleMouseLeave}
+              style={button2.buttonStyle}>PRODUCTS
+              {button2.isHovered && (
                 <div className="dropdown-content">
-                  <a href="/">Item 1</a>
-                  <a href="/">Item 2</a>
-                  <a href="/">Item 3</a>
+                  <a href="/" onMouseEnter={button2_1.handleMouseEnter}
+              onMouseLeave={button2_1.handleMouseLeave}
+              style={button2_1.subButtonStyle}>Item 1</a>
+                  <a href="/" onMouseEnter={button2_2.handleMouseEnter}
+              onMouseLeave={button2_2.handleMouseLeave}
+              style={button2_2.subButtonStyle}>Item 2</a>
+                  <a href="/" onMouseEnter={button2_3.handleMouseEnter}
+              onMouseLeave={button2_3.handleMouseLeave}
+              style={button2_3.subButtonStyle}>Item 3</a>
                 </div>
               )}
             </button>
