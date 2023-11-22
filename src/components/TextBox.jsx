@@ -3,7 +3,7 @@ import React from "react";
 function TextBox(props) {
     return (
         <div className="text-box">
-        <img className="paint-bg" src="./images/paint_1.png" alt="paint stroke"/>
+        {/* <img className="paint-bg" src="./images/paint_1.png" alt="paint stroke"/> */}
         <h2 className="text-box-header">{props.title}</h2>
         <div className="text-box-p-1-2">
         <p className="text-box-p-1">{props.p_1}</p>

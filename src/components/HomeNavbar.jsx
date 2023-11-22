@@ -1,109 +1,50 @@
-import React, { useState } from "react";
-import TrackChangesIcon from '@mui/icons-material/TrackChanges';
+import React from "react";
+import {useHover, useSubHover} from "./useHover.jsx";
+import buttonData from "./buttonData.jsx";
 
-const useHover = () => {
-    const [isHovered, setIsHovered] = useState(false);
-  
-    const handleMouseEnter = () => {
-      setIsHovered(true);
-    };
-  
-    const handleMouseLeave = () => {
-      setIsHovered(false);
-    };
-  
-    const buttonStyle = {
-      backgroundColor: isHovered ? '#424242' : 'transparent',
-      color: isHovered ? '#F1EDE4' : '#424242',
-      cursor: isHovered ? 'pointer' : null,
-      display: isHovered ? 'block' : 'inline'
-    };
+const HomeNavbar = () => {
+  const {hoverStates, handleMouseEnter, handleMouseLeave} = useHover();
+  const {subHoverStates, subHandleMouseEnter, subHandleMouseLeave} = useSubHover();
 
-    const subButtonStyle = {
-      backgroundColor: isHovered ? '#424242' : '#F1EDE4',
-      color: isHovered ? '#F1EDE4' : '#424242',
-      cursor: isHovered ? 'pointer' : null
+  const buttons = buttonData.map((data, index) => (
+    <div key={index} className={'button-container'}>
+      <button
+        href={data.href}
+        className={'nav-links'}
+        onMouseEnter={() => handleMouseEnter(index)}
+        onMouseLeave={() => handleMouseLeave(index)}
+        style={{
+          backgroundColor: hoverStates[index] ? '#424242' : 'transparent',
+          color: hoverStates[index] ? '#F1EDE4' : '#424242',
+          cursor: hoverStates[index] ? 'pointer' : null,
+          display: hoverStates[index] ? 'block' : 'inline'
+        }}
+      >
+        {data.label}
+        {(data.subItems && (data.subItems.length > 0) && hoverStates[index]) && (
+          <div className="dropdown-content">
+            {data.subItems.map((subItem, subIndex) => (
+              <a
+                key={subIndex}
+                href={subItem.href}
+                onMouseEnter={() => subHandleMouseEnter(subIndex)}
+                onMouseLeave={() => subHandleMouseLeave(subIndex)}
+                style={{
+                  backgroundColor: subHoverStates[subIndex] ? '#424242' : '#F1EDE4',
+                  color: subHoverStates[subIndex] ? '#F1EDE4' : '#424242',
+                  cursor: subHoverStates[subIndex] ? 'pointer' : null,
+                }}
+              >
+                {subItem.label}
+              </a>
+            ))}
+          </div>
+        )}
+      </button>
+    </div>
+  ));
 
-    };
-
-  
-    return { isHovered, handleMouseEnter, handleMouseLeave, buttonStyle, subButtonStyle };
-  };
-
-  
-function HomeNavbar() {
-
-    const button1 = useHover();
-    const button2 = useHover();
-    const button3 = useHover();
-    const button4 = useHover();
-    const button5 = useHover();
-    const button6 = useHover();
-    const button2_1 = useHover();
-    const button2_2 = useHover();
-    const button2_3 = useHover();
-    
-    return (
-        <div className="navbar">
-            <button 
-              href="/" 
-              className="nav-links logo"
-              onMouseEnter={button1.handleMouseEnter}
-              onMouseLeave={button1.handleMouseLeave}
-              style={button1.buttonStyle}
-            ><TrackChangesIcon fontSize="large" />
-          
-</button>
-            <button
-              href="/"
-              className="nav-links"
-              onMouseEnter={button2.handleMouseEnter}
-              onMouseLeave={button2.handleMouseLeave}
-              style={button2.buttonStyle}>PRODUCTS
-              {button2.isHovered && (
-                <div className="dropdown-content">
-                  <a href="/" onMouseEnter={button2_1.handleMouseEnter}
-              onMouseLeave={button2_1.handleMouseLeave}
-              style={button2_1.subButtonStyle}>Item 1</a>
-                  <a href="/" onMouseEnter={button2_2.handleMouseEnter}
-              onMouseLeave={button2_2.handleMouseLeave}
-              style={button2_2.subButtonStyle}>Item 2</a>
-                  <a href="/" onMouseEnter={button2_3.handleMouseEnter}
-              onMouseLeave={button2_3.handleMouseLeave}
-              style={button2_3.subButtonStyle}>Item 3</a>
-                </div>
-              )}
-            </button>
-            <button
-              href="/"
-              className="nav-links"
-              onMouseEnter={button3.handleMouseEnter}
-              onMouseLeave={button3.handleMouseLeave}
-              style={button3.buttonStyle}
-            >BRANDS</button>
-            <button
-              href="/" 
-              className="nav-links"
-              onMouseEnter={button4.handleMouseEnter}
-              onMouseLeave={button4.handleMouseLeave}
-              style={button4.buttonStyle}
-            >SALE</button>
-            <button
-              href="/"
-              className="nav-links"
-              onMouseEnter={button5.handleMouseEnter}
-              onMouseLeave={button5.handleMouseLeave}
-              style={button5.buttonStyle}
-            >ACCESSORIES</button>
-            <button
-              href="/"
-              className="nav-links"
-              onMouseEnter={button6.handleMouseEnter}
-              onMouseLeave={button6.handleMouseLeave}
-              style={button6.buttonStyle}
-            >LOOKS</button>
-        </div>
-    )
-}
+  return <div className="navbar">{buttons}</div>;
+};
 
 export default HomeNavbar;
