@@ -18,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    background-color: #f0ece2c2;
 }
 
 .nav-links {
@@ -32,11 +33,6 @@
     z-index: 1;
     position: relative;
 }
-
-/* .button-1-container, .button-7-container, .button-8-container, .button-9-container {
-  display: flex;
-  align-items: center;
-} */
 
 .dropdown-content {
   position: absolute;
@@ -122,71 +118,64 @@
     background-color: #FFFEFE;
     background-size: cover;
     width: 75%;
-    padding: 0;
     z-index: -1;
     position: relative;
-    display: flex;
-    justify-content: space-between;
 }
 
-/* .second-hero > * {
-  width: 20%;
+.second-hero-shoe {
+  padding-left: 4%;
+  padding-right: 2%;
+  padding-top: 12%;
+  height: 40%;
+  float: left;
+  z-index: 1;
+  position: relative;
   display: inline;
-} */
-
-/* .second-hero-shoe {
-    height: 217px;
-    width: 360px;
-    margin-left: 120px;
-    margin-top: 150px;
-    float: left;
-    z-index: 1;
-    position: relative;
-    display: inline;
 }
 
 .second-hero-hoodie-1 {
-    height: 501px;
-    width: 223px;
-    margin-left: 170px;
-    margin-top: 20px;
-    z-index: 1;
-    position: relative;
-    display: inline;
+  height: 95%;
+  z-index: 1;
+  position: relative;
+  display: inline;
+  padding-top: 1%;
+  padding-left: 10%;
+  padding-right: 6%;
 }
 
 .second-hero-hoodie-2 {
-    height: 501px;
-    width: 223px;
-    margin-left: 180px;
-    margin-top: 20px;
-    z-index: 1;
-    position: relative;
-    display: inline;
-} */
+  height: 95%;
+  z-index: 1;
+  position: relative;
+  display: inline;
+  float: right;
+  padding-top: 1%;
+  padding-left: 4%;
+  padding-right: 8%;
+}
 
-.divider {
+.divider-hero {
   background-color: #FFFEFE;
-    height: 20px;
-    width: 75%;
-    display: flex;
-    padding-top: 20px;
-    justify-content: space-between;
-    padding-bottom: 0;
+  height: 10%;
+  width: 75%;
   }
+
+.divider-container {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+}
   
 .left-line {
   height: 3px;
-  width: 420px;
+  width: 10%;
   background-color: #ece5d9;
-  margin-left: 240px;
 }
 
 .right-line {
   height: 3px;
-  width: 420px;
+  width: 10%;
   background-color: #ece5d9;
-  margin-right: 240px;
 }
 
 
@@ -195,19 +184,17 @@
   width: 20px;
   background-color: #424242bd;
   border-radius: 50%;
-  margin-bottom: 35px;
-  margin-top: -10px;
 }
 
 .text-box-p-1, .text-box-p-2 {
   display: inline;
   font-family: 'Kanit', sans-serif;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .text-box-p-3  {
   display: flex;
-  font-size: 18px;
+  font-size: 12px;
   font-family: 'Prompt', sans-serif;
   font-weight: 500;
   padding-top: 25px;
@@ -224,12 +211,12 @@
   display: flex;
   justify-content: center;
   width: 75%;
-  height: 300px;
+  height: 320px;
   padding-top: 20px;
 }
 
 .third-hero {
-  width: 1200px;
+  width: 75%;
   display: flex;
   justify-content: space-between;
 }
@@ -237,7 +224,7 @@
 .text-box-header {
   font-family: 'Kanit', sans-serif;
   color: #2b2827f0;
-  font-size: 38px;
+  font-size: 28px;
   word-wrap: break-word;
   letter-spacing: 3px;
   margin-bottom: 6px;
