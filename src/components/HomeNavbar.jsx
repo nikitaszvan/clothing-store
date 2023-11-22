@@ -7,7 +7,7 @@ const HomeNavbar = () => {
   const {subHoverStates, subHandleMouseEnter, subHandleMouseLeave} = useSubHover();
 
   const buttons = buttonData.map((data, index) => (
-    <div key={index} className={'button-container'}>
+    <div key={index} className={`button-${index+1}-container`}>
       <button
         href={data.href}
         className={'nav-links'}
@@ -21,6 +21,7 @@ const HomeNavbar = () => {
         }}
       >
         {data.label}
+        {data.icon && data.icon}
         {(data.subItems && (data.subItems.length > 0) && hoverStates[index]) && (
           <div className="dropdown-content">
             {data.subItems.map((subItem, subIndex) => (
