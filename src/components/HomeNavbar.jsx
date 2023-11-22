@@ -11,6 +11,7 @@ const HomeNavbar = () => {
       <button
         href={data.href}
         className={'nav-links'}
+        title={data.title && data.title}
         onMouseEnter={() => handleMouseEnter(index)}
         onMouseLeave={() => handleMouseLeave(index)}
         style={{
@@ -20,7 +21,7 @@ const HomeNavbar = () => {
           display: hoverStates[index] ? 'block' : 'inline'
         }}
       >
-        {data.label}
+        {data.label && data.label}
         {data.icon && data.icon}
         {(data.subItems && (data.subItems.length > 0) && hoverStates[index]) && (
           <div className="dropdown-content">

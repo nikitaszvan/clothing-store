@@ -29,7 +29,7 @@ function FirstHero() {
             <div className="first-hero-div1">
             <p className="first-hero-p1">TUESD</p>
             <h1 className="first-hero-h1">SE SEFOAM</h1>
-            <p className="first-hero-p2">Get the collection the entire population <br/>is waiting for</p>
+            <p className="first-hero-p2">GET THE COLLECTION THE ENTIRE POPULATION IS WAITING FOR</p>
             <button 
                 href="/"
                 className="catalouge-btn"

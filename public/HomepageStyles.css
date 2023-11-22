@@ -16,6 +16,8 @@
     width: 75%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 60px;
 }
 
 .nav-links {
@@ -24,13 +26,17 @@
     color: #424242;
     border: none;
     background-color: 'transparent';
-    font-size: 25px;
+    font-size: 15px;
     /* padding: 20px 20px 15px 20px; */
-    height: 74px;
-    padding: 8px 30px 6px 30px;
+    padding: 15px 30px 15px 30px;
     z-index: 1;
     position: relative;
 }
+
+/* .button-1-container, .button-7-container, .button-8-container, .button-9-container {
+  display: flex;
+  align-items: center;
+} */
 
 .dropdown-content {
   position: absolute;
@@ -41,21 +47,24 @@
 .dropdown-content > * {
   display: block;
   text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .first-hero {
-    height: 315px;
+    height: 450px;
     background-image: url("./images/background.png");
     background-size: cover;
     width: 75%;
-    padding: 0;
+    margin-top: -2px;
     box-shadow: 0 10px 30px rgba(198, 197, 197, 0.832);
 }
 
 .first-hero-h1 {
-    font-size: 25px;
+    font-size: 40px;
+    letter-spacing: 4px;
     padding-left: 20px;
-    margin-top: 5%;
+    margin-top: 10%;
     color: #292b2b;
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
@@ -63,27 +72,32 @@
 }
 
 .first-hero-p1 {
-    padding-left: 10px;
+    padding-left: 3%;
     padding-top: 6%;
     font-family: 'Kanit', sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     letter-spacing: 5px;
     color: #2b2827ac;
 }
 
 .first-hero-models {
-    height: 100%;
-    margin-right: 3%;
+    height: 100.5%;
+    width: 56%;
     float: right;
+    padding-right: 3%;
+    padding-top: -0.7%;
 }
 
 .first-hero-div1 {
     float: left;
-    margin-left: 3%;
+    margin-left: 4%;
+    margin-top: 2%;
+    width: 35%;
 }
 
 .first-hero-p2 {
-    padding-left: 20px;
+    padding-left: 3%;
+    padding-top: 3%;
     font-family: 'Prompt', sans-serif;
     font-weight:300;
     font-size: 15px;
@@ -92,9 +106,9 @@
 }
 
 .catalouge-btn {
-    margin-left: 20px;
+    margin-left: 3%;
     font-family: 'Teko', sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     padding: 5px 10px 5px 10px;
     margin-top: 50px;
     background-color: #C5B7A3;
@@ -115,10 +129,10 @@
     justify-content: space-between;
 }
 
-.second-hero > * {
+/* .second-hero > * {
   width: 20%;
   display: inline;
-}
+} */
 
 /* .second-hero-shoe {
     height: 217px;
