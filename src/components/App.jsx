@@ -1,26 +1,19 @@
 import React from "react";
-import HomeNavbar from "./HomeNavbar.jsx";
-import FirstHero from "./FirstHero.jsx";
-import SecondHero from "./SecondHero.jsx";
-import Divider from "./Divider.jsx";
-import ThirdHero from "./ThirdHero.jsx";
-import FourthHero from "./FourthHero.jsx";
-import HomeFooter from "./HomeFooter";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Products from "./Products.jsx";
+import Homepage from "./Homepage.jsx";
 
-function App() {
+const App = () => {
     return (
-        <div className="main-div">
-            <HomeNavbar />
-            <div className="reduced-width-div">
-                <FirstHero />
-                <SecondHero />
-                <Divider />
-                <ThirdHero />
-                <FourthHero />
-            </div>
-            <HomeFooter />
-        </div>
-    )
-}
-
-export default App;
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route index element={<Homepage />} />
+            <Route path="/products" element={<Products />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    );
+  };
+  
+  export default App;

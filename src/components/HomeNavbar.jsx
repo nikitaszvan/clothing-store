@@ -8,7 +8,7 @@ const HomeNavbar = () => {
 
   const buttons = buttonData.map((data, index) => (
     <div key={index} className={`button-${index+1}-container`}>
-      <button
+      <a
         href={data.href}
         className={'nav-links'}
         title={data.title && data.title}
@@ -20,7 +20,7 @@ const HomeNavbar = () => {
           cursor: hoverStates[index] ? 'pointer' : null,
           display: hoverStates[index] ? 'block' : 'inline'
         }}
-      >
+        >
         {data.label && data.label}
         {data.icon && data.icon}
         {(data.subItems && (data.subItems.length > 0) && hoverStates[index]) && (
@@ -42,7 +42,7 @@ const HomeNavbar = () => {
             ))}
           </div>
         )}
-      </button>
+      </a>
     </div>
   ));
 
