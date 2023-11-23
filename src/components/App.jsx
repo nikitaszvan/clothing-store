@@ -5,16 +5,20 @@ import SecondHero from "./SecondHero.jsx";
 import Divider from "./Divider.jsx";
 import ThirdHero from "./ThirdHero.jsx";
 import FourthHero from "./FourthHero.jsx";
+import HomeFooter from "./HomeFooter";
 
 function App() {
     return (
         <div className="main-div">
-        <HomeNavbar />
-        <FirstHero />
-        <SecondHero />
-        <Divider />
-        <ThirdHero />
-        <FourthHero />
+            <HomeNavbar />
+            <div className="reduced-width-div">
+                <FirstHero />
+                <SecondHero />
+                <Divider />
+                <ThirdHero />
+                <FourthHero />
+            </div>
+            <HomeFooter />
         </div>
     )
 }

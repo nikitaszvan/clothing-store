@@ -8,16 +8,14 @@
   background-size: cover;
 }
 
-.main-div > * {
+.first-hero, .second-hero, .third-hero-container, .divider-hero, .fourth-hero {
   margin-left: 13%;
 }
 
 .navbar {
-    width: 75%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
+    justify-content: space-around;
+    height: 50px;
     background-color: #f0ece2c2;
 }
 
@@ -27,11 +25,31 @@
     color: #424242;
     border: none;
     background-color: 'transparent';
-    font-size: 15px;
+    font-size: 20px;
     /* padding: 20px 20px 15px 20px; */
-    padding: 15px 30px 15px 30px;
+    padding: 12px 30px 12px 30px;
     z-index: 1;
     position: relative;
+}
+
+.button-1-container > * {
+  padding: 15px 30px 9px 30px;
+}
+
+.button-7-container > * {
+  padding: 15px 30px 9px 30px;
+}
+
+.button-8-container > * {
+  padding: 15px 30px 9px 30px;
+}
+
+.button-9-container > * {
+  padding: 15px 30px 9px 30px;
+}
+
+.button-10-container > * {
+  padding: 15px 30px 9px 30px;
 }
 
 .dropdown-content {
@@ -52,7 +70,6 @@
     background-image: url("./images/background.png");
     background-size: cover;
     width: 75%;
-    margin-top: -2px;
     box-shadow: 0 10px 30px rgba(198, 197, 197, 0.832);
 }
 
@@ -78,7 +95,7 @@
 
 .first-hero-models {
     height: 100.5%;
-    width: 56%;
+    width: 58%;
     float: right;
     padding-right: 3%;
     padding-top: -0.7%;
@@ -88,7 +105,7 @@
     float: left;
     margin-left: 4%;
     margin-top: 2%;
-    width: 35%;
+    width: 34%;
 }
 
 .first-hero-p2 {
@@ -200,7 +217,7 @@
 
 .text-box-p-3  {
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Prompt', sans-serif;
   font-weight: 500;
   padding-top: 25px;
@@ -258,7 +275,7 @@
 }
 
 .first-column-4-hero {
-  margin-left: 5%;
+  margin-left: 4%;
   margin-top: 5%;
   width: 25%;
   float: left;
@@ -276,7 +293,7 @@
   color: #2b2827f0;
   font-size: 18px;
   letter-spacing: 3px;
-  margin-top: 100px;
+  margin-top: 25%;
 }
 
 .first-c-p-3, .first-c-p-4 {
@@ -314,7 +331,7 @@
 }
 
 .second-column-4-hero {
-  margin-top: 21%;
+  margin-top: 15%;
   margin-left: 3%;
   width: 20%;
 }
@@ -341,7 +358,7 @@
 
 .third-column-4-hero {
   float: right;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 
 .hoodie-pic {
@@ -417,9 +434,9 @@
 }
 
 .footer {
-  width: 75%;
-  height: 500px;
-  background-color: #FFFEFE;
+  width: 100%;
+  height: 200px;
+  background-color: #f0ece2c2;
   z-index: -1;
   position: relative;
 }
@@ -429,6 +446,9 @@
   position: relative;
 }
 
+.footer-h2 {
+  margin-top: 0;
+}
 
 
 

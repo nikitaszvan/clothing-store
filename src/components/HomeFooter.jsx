@@ -6,13 +6,12 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 function HomeFooter() {
     return (
         <div className="footer">  
-        <img className="footer-image" src="/images/footer-pic.png" alt="man looking down"/>
-        <h1>COLLECTIVE</h1>
-        <div>
-            <TwitterIcon />
-            <InstagramIcon />
-            <FacebookIcon />
-        </div>
+            <h1 className="footer-h2">COLLECTIVE</h1>
+            <div>
+                <TwitterIcon />
+                <InstagramIcon />
+                <FacebookIcon />
+            </div>
         </div>
     )
 }

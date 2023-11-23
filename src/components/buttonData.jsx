@@ -5,7 +5,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchIcon from '@mui/icons-material/Search';
 
 const buttonData = [
-    { icon: <TrackChangesIcon fontSize="large" />, href: "/", title: "HOME"},
+    { icon: <TrackChangesIcon />, href: "/", title: "HOME"},
     { label: "PRODUCTS", subItems: [{label: "Item 1", href: "/"}, {label: "Item 2", href: "/"}, {label: "Item 3", href: "/"}], href: "/" },
     { label: "BRANDS", subItems: [{label: "Item 1", href: "/"}, {label: "Item 2", href: "/"}, {label: "Item 3", href: "/"}], href: "/"  },
     { label: "ON SALE", subItems: [{label: "Item 1", href: "/"}, {label: "Item 2", href: "/"}, {label: "Item 3", href: "/"}], href: "/" },
