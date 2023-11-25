@@ -48,6 +48,11 @@
   text-align: center;
 }
 
+.search-bar {
+  margin-bottom: 50px;
+  border: none;
+}
+
 .first-hero {
     height: 450px;
     background-image: url("./images/background.png");
