@@ -16,7 +16,8 @@ const HomeNavbar = () => {
     <div key={index} className={`button-${index+1}-container`}>
       {(hoverStates[index] && data.title==="SEARCH") ?
       (<form onSubmit={handleSubmit} className="search-form">
-      <input ref={searchBarRef} type="search" placeholder="Search" className="search-bar"/><button
+      <input ref={searchBarRef} type="search" placeholder="Search" className="search-bar"/>
+      <button
         type="submit"
         href={data.href && data.href}
         className={'nav-links'}
@@ -27,7 +28,7 @@ const HomeNavbar = () => {
           backgroundColor: 'transparent',
           color: '#424242',
           cursor: hoverStates[index] ? 'pointer' : null,
-          padding: '30px 0 0 10px'  
+          padding: '0 0 0 5px'
         }}
         > {data.icon}
           </button>

@@ -49,8 +49,9 @@
 }
 
 .search-bar {
-  margin-bottom: 50px;
   border: none;
+  width: 200px;
+  height: 25px;
 }
 
 .first-hero {
