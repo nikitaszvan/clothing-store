@@ -9,7 +9,7 @@ const HomeNavbar = () => {
   const buttons = buttonData.map((data, index) => (
     <div key={index} className={`button-${index+1}-container`}>
       <a
-        href={data.href}
+        href={data.href && data.href}
         className={'nav-links'}
         title={data.title && data.title}
         onMouseEnter={() => handleMouseEnter(index)}
@@ -21,6 +21,7 @@ const HomeNavbar = () => {
           display: hoverStates[index] ? 'block' : 'inline'
         }}
         >
+        {(hoverStates[index] && data.title==="SEARCH") && <input type="search"/>}
         {data.label && data.label}
         {data.icon && data.icon}
         {(data.subItems && (data.subItems.length > 0) && hoverStates[index]) && (

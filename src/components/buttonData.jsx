@@ -11,7 +11,7 @@ const buttonData = [
     { label: "ON SALE", subItems: [{label: "Item 1", href: "/"}, {label: "Item 2", href: "/"}, {label: "Item 3", href: "/"}], href: "/" },
     { label: "ACCESSORIES", subItems: [{label: "Item 1", href: "/"}, {label: "Item 2", href: "/"}, {label: "Item 3", href: "/"}], href: "/" },
     { label: "LOOKBOOK", subItems: [{label: "Item 1", href: "/"}, {label: "Item 2", href: "/"}, {label: "Item 3", href: "/"}], href: "/"},
-    { icon: <SearchIcon />, href: "/", title: "SEARCH"},
+    { icon: <SearchIcon />, title: "SEARCH"},
     { icon: <Person2Icon />, href: "/", title: "SIGN IN"},
     { icon: <FavoriteIcon />, href: "/", title: "FAVORITES"},
     { icon: <ShoppingCartIcon />, href: "/", title: "CART"}
